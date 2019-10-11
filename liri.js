@@ -21,10 +21,10 @@ if (whatLiriDoes == 'spotify-this-song') {
         return console.log('Error occurred: ' + err);
       }
      
-    console.log(data.tracks.items[0]); 
+     
     console.log(data.tracks.items[0].name);
     console.log(data.tracks.items[0].album.name);
-    console.log(data.tracks.items[0].external_urls);
+    console.log(data.tracks.items[0].external_urls.spotify);
     console.log(data.tracks.items[0].artists[0].name); 
     });
 }
